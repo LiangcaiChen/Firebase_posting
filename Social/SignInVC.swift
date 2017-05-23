@@ -9,10 +9,12 @@
 import UIKit
 
 class SignInVC: UIViewController {
+    @IBOutlet weak var headerView:HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        headerView.addDropShadow()
     }
 
     override func didReceiveMemoryWarning() {

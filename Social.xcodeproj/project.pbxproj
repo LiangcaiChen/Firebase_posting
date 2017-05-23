@@ -14,6 +14,8 @@
 		DCE0A7321ED47CB300E7F56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE0A7311ED47CB300E7F56D /* Assets.xcassets */; };
 		DCE0A7351ED47CB300E7F56D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE0A7331ED47CB300E7F56D /* LaunchScreen.storyboard */; };
 		DCE0A73D1ED47DC400E7F56D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCE0A73C1ED47DC400E7F56D /* GoogleService-Info.plist */; };
+		DCE0A7451ED4963F00E7F56D /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0A7441ED4963F00E7F56D /* DropShadow.swift */; };
+		DCE0A7471ED4967A00E7F56D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0A7461ED4967A00E7F56D /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DCE0A7341ED47CB300E7F56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE0A7361ED47CB300E7F56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE0A73C1ED47DC400E7F56D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCE0A7441ED4963F00E7F56D /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		DCE0A7461ED4967A00E7F56D /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		DCE0A7291ED47CB300E7F56D /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				DCE0A7431ED4962200E7F56D /* Protocol */,
 				DCE0A7401ED47FEC00E7F56D /* View */,
 				DCE0A73F1ED47FE500E7F56D /* Controller */,
 				DCE0A73E1ED47FDC00E7F56D /* Model */,
@@ -103,8 +108,17 @@
 		DCE0A7401ED47FEC00E7F56D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DCE0A7461ED4967A00E7F56D /* HeaderView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		DCE0A7431ED4962200E7F56D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0A7441ED4963F00E7F56D /* DropShadow.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		F94CB2722CBE7C2DEC50B8D9 /* Frameworks */ = {
@@ -241,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE0A72D1ED47CB300E7F56D /* SignInVC.swift in Sources */,
+				DCE0A7451ED4963F00E7F56D /* DropShadow.swift in Sources */,
 				DCE0A72B1ED47CB300E7F56D /* AppDelegate.swift in Sources */,
+				DCE0A7471ED4967A00E7F56D /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RK58MBJKW7;
 				INFOPLIST_FILE = Social/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lc.Social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RK58MBJKW7;
 				INFOPLIST_FILE = Social/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lc.Social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
