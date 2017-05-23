@@ -10,11 +10,13 @@ import UIKit
 
 class SignInVC: UIViewController {
     @IBOutlet weak var headerView:HeaderView!
-
+    @IBOutlet weak var roundBtn:RoundBtn!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         headerView.addDropShadow()
+        roundBtn.modifyBtnShape()
     }
 
     override func didReceiveMemoryWarning() {

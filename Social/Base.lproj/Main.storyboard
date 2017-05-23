@@ -65,7 +65,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-TM-9cL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-TM-9cL" customClass="RoundBtn" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="132.5" y="278.5" width="110" height="110"/>
                                 <color key="backgroundColor" red="0.30735146999359131" green="0.40111315250396729" blue="0.64715409278869629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -123,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="headerView" destination="l0z-gH-hqE" id="3mz-AL-nHg"/>
+                        <outlet property="roundBtn" destination="wKP-TM-9cL" id="Nzo-pk-AmA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
